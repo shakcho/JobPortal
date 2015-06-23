@@ -56,7 +56,13 @@
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/RegisterUser">Register</a></li>
+                                <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" runat="server" href="#r">Register</a>
+                                    <ul class="dropdown-menu">
+                                    	<li><a runat="server" href="~/Account/RegisterUser">Job Seeker</a></li>
+                                    	<li><a runat="server" href="~/Account/RegisterCompany">Recruiter</a></li>
+                                    </ul>
+                                </li>
+                                    
                                 <li><a runat="server" href="~/Account/Login">Log in</a></li>
                             </ul>
                         </AnonymousTemplate>
